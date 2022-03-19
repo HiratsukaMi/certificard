@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/041/128/693/large/amanda-brotto-splash-anfitriao.jpg?1630852698");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 64px;
+  background: #ECF4FF;
+  color: #1C1C1C;
+  border-radius: 20px;
+  padding: 64px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  max-width: 195px;
+  border-radius: 460px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: #ECF4FF;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #0E1D2F;
+}
+
+.tema button:hover {
+  background: #0E1D2F;
+  border: 2px solid #ECF4FF;
+  color: #ECF4FF;
+}
+
+.portfolio {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.projetos {
+  color: #ffffff;
+  max-height: 430px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 32px;
+  background: linear-gradient(230.65deg, #61105f 27.49%, #f773f4 83.19%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contato {
+  height: 140px;
+  width: auto;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding: 8px 32px;
+  background: linear-gradient(230.65deg, #61105f 27.49%, #f773f4 83.19%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.conquistas {
+  height: 257px;
+  width: auto;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding: 8px 32px;
+  background: linear-gradient(230.65deg, #61105f 27.49%, #f773f4 83.19%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.projetos ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.projetos li {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 2em;
+  font-weight: bold;
+}
+
+.conquistas h2,
+.contato h2 {
+  align-self: flex-start;
+  list-style: none;
+  padding-left: 0;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.conquistas img {
+  max-height: 100px
+}
+
+.grid-contato {
+	display: grid;
+	gap: 1em;
+  grid-template-columns: repeat(5, 50px);
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.grid-portfolio {
+	display: grid;
+	gap: 1em;
+	align-content: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.grid-conquistas {
+	display: grid;
+	gap: 1em;
+  grid-template-columns: repeat(3, 95px);
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.img-conquistas {
+  height: 100px;
+}
+
+.contato a {
+  color: black;
+  font-size: 2em;
+}
+
+.contato a:hover {
+	text-shadow: 0px 0px 20px white;
+	
+}
+
+.dark {
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/041/128/693/large/amanda-brotto-splash-anfitriao.jpg?1630852698");
+  background-size: cover;
+  background-color: #ffffff;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+  
+.dark .container {
+  background: #333439;
+  color: #F6F6F6;
+}
+
+.dark .portfolio {
+  color: #1C1C1C;
+}
+
+.dark .tema button {
+  color: #FFFFFF;
+  background: #1C1C1C;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #F7F7F7;
+}
+
+.dark .tema button:hover {
+  background: #ECF4FF;
+  border: 2px solid #0E1D2F;
+  color: #0E1D2F;
+}
+
+::-webkit-scrollbar{
+width: 5px;
+height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+background: #61105f;
+border: 1.8px solid #61105f;
+border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background: #f773f4;
+}
+
+::-webkit-scrollbar-track{
+background: #f773f4;
+border-radius: 100px;
+box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+margin: 15px 0px;
+}
